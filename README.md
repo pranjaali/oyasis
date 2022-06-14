@@ -1,2 +1,0 @@
-# oyasis
-internship

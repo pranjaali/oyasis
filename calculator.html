@@ -1,0 +1,157 @@
+# oyasis
+internship
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body{
+          /* background-image: url(background.png); */
+            /* border-color: blue; */
+            background-repeat: no-repeat;
+            background-size:cover;
+        }
+        .maincontainer{
+          height: 750px;
+          width: 1300px;
+          /* background-color: rgba(10,1,10, 0.9); */
+          position: relative;
+          margin: auto;
+        }
+      
+    html {  
+  height: 120vh;  
+  display: flex;  
+  align-items: center;  
+  justify-content: center;  
+  background-color: #1c1f20;  
+  background-image: linear-gradient(315deg, #1b1f20 0%, #000000 74%);  
+  font-family: 'Cookie', cursive;  
+}  
+.title {  
+margin-bottom: 3px;  
+padding: 5px 0;  
+font-size: 40px;  
+font-weight: bold;  
+text-align: center;  
+color: red;  
+font-family: 'Cookie', cursive;  
+}  
+input[type=button] {  
+  width: 60px;  
+  height: 60px;  
+  float: left;  
+  padding: 0;  
+  margin: 5px;  
+  box-sizing: border-box;  
+  background: #050505;  
+  border:3px solid white;  
+  font-size: 30px;  
+  line-height: 30px;  
+  border-radius: 10%;  
+  font-weight: 700;  
+  color: #e9ebdb;  
+  cursor: pointer;    
+}  
+input[type=button]:hover{
+  border: 3px solid gray;
+  box-shadow : 2px 2px 2px rgb(75, 72, 72);
+  color: rgb(241, 70, 99);
+  background-color: rgb(24, 219, 253);
+}
+input[type=text] {  
+  width: 270px;  
+  height: 60px;  
+  float: left;  
+  padding: 0;  
+  box-sizing: border-box;  
+  border: none;  
+  background: none;  
+  color: red;  
+  text-align: right;  
+  font-weight: 700;  
+  font-size: 60px;  
+  line-height: 60px;  
+  margin: 0 25px;  
+  }  
+.calculator {  
+  background-color: #111010; 
+  width: 430px;
+  margin: auto; 
+  box-shadow: 0px 0px 0px 10px rgb(19, 18, 18);  
+  border: 5px solid white;  
+  border-radius: 1px;  
+}  
+#display {  
+  height: 40px;  
+  text-align: right;  
+  background-color: rgb(20, 19, 19);  
+  border: 2px solid rgb(247, 244, 244);  
+  font-size: 18px;  
+  left: 2px;  
+  top: 2px;  
+  color: rgb(228, 248, 48);  
+}  
+.btnTop {  
+  color: white;  
+  background-color: #292424;  
+  font-size: 14px;  
+  margin: auto;  
+  width: 50px;  
+  height: 25px;  
+} 
+.round{
+  border-radius: 100%;
+
+}    
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+</head>
+<body>
+    <div class="image">
+    
+    </div>
+    <div class="maincontainer">
+
+
+
+<form name="Calculator" class = "calculator" >  
+  <table border="3" align="center" cellpadding="10" cellspacing="19" bgcolor=black>  
+  <tr>  
+  <td>  
+  <input type="text" name="Input" Size="40" id="display">  
+  <br>  
+  </td>  
+  </tr>  
+  <tr>  
+  <td>  
+  <input type="button" name = "one" style="font-size:30px" value=" 1 " OnClick="Calculator.Input.value += '1'">  
+  <input type="button" name = "two" style = "font-size:30px" value=" 2 " OnCLick="Calculator.Input.value += '2'">  
+  <input type="button" name = "three" style="font-size:30px" value=" 3 " OnClick="Calculator.Input.value += '3'">  
+  <input class="round"type="button" name="add" class ="btnTop" style="font-size:30px" value=" + " OnClick="Calculator.Input.value += ' + '">  
+  <br>  
+  <input type="button" name = "four" style="font-size:30px" value=" 4 " OnClick="Calculator.Input.value += '4'">  
+  <input type="button" name = "five" style="font-size:30px" value=" 5 " OnCLick="Calculator.Input.value += '5'">  
+  <input type="button" name = "six" style="font-size:30px" value=" 6 " OnClick="Calculator.Input.value += '6'">  
+  <input class="round" type="button" name = "minus" style="font-size:30px" value=" - " OnClick="Calculator.Input.value += ' - '">  
+  <br>  
+  <input type="button" name = "seven" style="font-size:30px" value=" 7 " OnClick="Calculator.Input.value += '7'">  
+  <input type="button" name = "eight" style="font-size:30px" value=" 8 " OnCLick="Calculator.Input.value += '8'">  
+  <input type="button" name = "nine" style="font-size:30px" value=" 9 " OnClick="Calculator.Input.value += '9'">  
+  <input class="round"type="button" name = "mul" style="font-size:30px" value=" * "   
+  OnClick="Calculator.Input.value += ' * '">  
+  <br>  
+  <input type="button" name = "clear" style="font-size:30px" value=" c " OnClick="Calculator.Input.value = ''">  
+  <input type="button" name="zero" style="font-size:30px" value=" 0 " OnClick="Calculator.Input.value += '0'">  
+  <input class="round"type="button" name="DoIt" style="font-size:30px" value=" = " OnClick="Calculator.Input.value = eval(Calculator.Input.value)">  
+  <input class="round" type="button" name="div" style="font-size:30px" value=" / " OnClick="Calculator.Input.value += ' / '">  
+  <br>  
+  </td>  
+    
+  </tr>  
+  </table>  
+  </form>  
+</body>
+</html>
